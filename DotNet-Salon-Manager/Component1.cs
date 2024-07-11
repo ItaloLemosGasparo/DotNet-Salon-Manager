@@ -1,19 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace DotNet_Salon_Manager
 {
-    public partial class Form1 : Form
+    public partial class Component1 : Component
     {
-        public Form1()
+        public Component1()
         {
+            InitializeComponent();
+        }
+
+        public Component1(IContainer container)
+        {
+            container.Add(this);
+
             InitializeComponent();
         }
     }

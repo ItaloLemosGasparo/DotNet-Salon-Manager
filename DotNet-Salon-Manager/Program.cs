@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Globals;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace DotNet_Salon_Manager
 {
@@ -16,7 +15,7 @@ namespace DotNet_Salon_Manager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new exemplo());            
         }
     }
 }
