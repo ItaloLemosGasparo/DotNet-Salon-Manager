@@ -63,36 +63,6 @@ namespace DotNet_Salon_Manager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap contorno_do_botao_de_seta_quadrado_de_login {
-            get {
-                object obj = ResourceManager.GetObject("contorno-do-botao-de-seta-quadrado-de-login", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap LoginButton {
-            get {
-                object obj = ResourceManager.GetObject("LoginButton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap SuaLogoAqui {
-            get {
-                object obj = ResourceManager.GetObject("SuaLogoAqui", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap tesoura_e_pente {
             get {
                 object obj = ResourceManager.GetObject("tesoura-e-pente", resourceCulture);

@@ -34,5 +34,10 @@ namespace DotNet_Salon_Manager
         {
             Application.Exit();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
