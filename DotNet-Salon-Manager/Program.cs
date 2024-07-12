@@ -15,7 +15,7 @@ namespace DotNet_Salon_Manager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new exemplo());            
+            Application.Run(new frmLoginscreen());            
         }
     }
 }

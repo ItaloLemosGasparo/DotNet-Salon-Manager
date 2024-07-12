@@ -8,7 +8,7 @@ namespace DotNet_Salon_Manager
 {
     public partial class exemplo : Form
     {
-        Connection connection = new Connection();
+        Global connection = new Global();
 
         public exemplo()
         {
@@ -31,6 +31,10 @@ namespace DotNet_Salon_Manager
 
 
             dgvMain.DataSource = connection.CarregaDataTable("dbo.PesquisaUsuario", parameters);
+            if (connection.msgRetornoClasse != "OK")
+            {
+                MessageBox.Show(connection.msgRetornoClasse);
+            }
         }
     }
 }

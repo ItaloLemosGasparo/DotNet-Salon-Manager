@@ -5,13 +5,13 @@ using System.Data;
 
 namespace Globals
 {
-    public class Connection
+    public class Global
     {
         string ConnectionString = ConfigurationManager.ConnectionStrings["SalonManagerDB"].ConnectionString;
 
         public string msgRetornoClasse { get; set; }
 
-        public Connection() { }
+        public Global() { }
 
         public DataTable CarregaDataTable(string procedure, SqlParameterCollection parameters)
         {
