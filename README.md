@@ -10,6 +10,4 @@ Relatórios: Geração de relatórios sobre agendamentos, clientes e faturamento
 Tecnologias Utilizadas:<br/>
 .NET Framework: Base do projeto, proporcionando robustez e segurança.<br/>
 Windows Forms: Interface gráfica amigável e fácil de usar.<br/>
-Entity Framework: Mapeamento objeto-relacional para acesso a banco de dados.<br/>
 Azure SQL Database: Banco de dados na nuvem para armazenamento seguro e eficiente dos dados, sem necessidade de instalação local.<br/>
-SQL Server Management Studio (SSMS): Ferramenta para gerenciamento e configuração do banco de dados SQL no Azure.<br/>
