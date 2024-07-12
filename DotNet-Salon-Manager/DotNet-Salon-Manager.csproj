@@ -100,16 +100,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SuaLogoAqui.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tesoura-e-pente.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LoginButton.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\contorno-do-botao-de-seta-quadrado-de-login.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
