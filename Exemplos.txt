@@ -1,0 +1,18 @@
+//Cria um datatable e copiar apens colunas especificas de outro datatable
+DataTable dataTable = new DataTable();
+dataTable.Columns.Add("Estabelecimento", typeof(string));
+dataTable.Columns.Add("RazaoSocial", typeof(string));
+
+dataTable = dtRetorno.AsEnumerable()
+                  .GroupBy(r => new
+                  {
+                      Estabelecimento = r.Field<string>("Estabelecimento"),
+                      RazaoSocial = r.Field<string>("RazaoSocial")
+                  })
+                  .Select(g => {
+                      var row = dataTable.NewRow();
+                      row["Estabelecimento"] = g.Key.Estabelecimento;
+                      row["RazaoSocial"] = g.Key.RazaoSocial;
+                      return row;
+                  })
+                  .CopyToDataTable();
