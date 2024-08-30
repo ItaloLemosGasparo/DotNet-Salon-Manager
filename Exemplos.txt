@@ -16,3 +16,20 @@ dataTable = dtRetorno.AsEnumerable()
                       return row;
                   })
                   .CopyToDataTable();
+
+//Filtra datatable to list
+List<string> ECsSemRazaoSocial = dtRetorno.AsEnumerable()  
+                                  .Where(r => string.IsNullOrWhiteSpace(r["RazaoSocial"].ToString()))
+                                  .Select(r => r["Estabelecimento"].ToString())
+                                  .Distinct()
+                                  .ToList();
+
+//Filtra DataGridView to list
+List<string> ECsSemRazaoSocial = dgvMain.Rows
+                                  OfType<DataGridViewRow>()
+                                  Where(r => string.IsNullOrWhiteSpace(r.Cells["RazaoSocial"].Value.ToString()))
+                                  Select(r => r.Cells["Estabelecimento"].Value. ToString())
+                                  Distinct()
+                                  ToList();
+
+
